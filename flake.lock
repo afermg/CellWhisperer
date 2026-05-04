@@ -23,7 +23,7 @@
     "flake-utils_2": {
       "inputs": {
         "systems": [
-          "pynng-flake",
+          "nahual-flake",
           "systems"
         ]
       },
@@ -38,6 +38,29 @@
       "original": {
         "owner": "numtide",
         "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "nahual-flake": {
+      "inputs": {
+        "flake-utils": "flake-utils_2",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "nixpkgs_master": "nixpkgs_master",
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1777930077,
+        "narHash": "sha256-Jya7sDim7GwHXzj33qD51tsoLqmOIkFl3mChXdfLxl0=",
+        "owner": "afermg",
+        "repo": "nahual",
+        "rev": "3d9977a935539f378c403326ec29aeb22912ed2e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "afermg",
+        "repo": "nahual",
         "type": "github"
       }
     },
@@ -59,11 +82,11 @@
     },
     "nixpkgs_master": {
       "locked": {
-        "lastModified": 1750996587,
-        "narHash": "sha256-TZX59sYtIj03+YlPYLOt+QRBojqSCSXHqiTrxSlQgQE=",
+        "lastModified": 1765242524,
+        "narHash": "sha256-RvchMDNywOhGHonO3IrwGGweMyEAcWS2XVBNN+Q9ClQ=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "20ab4393953e79baf3eba360336a7e0619a0699f",
+        "rev": "deab3241e7a28bd6c9a0f06e238fa99202260f67",
         "type": "github"
       },
       "original": {
@@ -73,34 +96,11 @@
         "type": "github"
       }
     },
-    "pynng-flake": {
-      "inputs": {
-        "flake-utils": "flake-utils_2",
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "nixpkgs_master": "nixpkgs_master",
-        "systems": "systems"
-      },
-      "locked": {
-        "lastModified": 1768853525,
-        "narHash": "sha256-VQI/Etv6onrjid7Eq8Sx0oNVJYJZAqzXteQVsm5edio=",
-        "owner": "afermg",
-        "repo": "pynng",
-        "rev": "c0e1c43a137163463c81f5659e66fbb6cd1a05bc",
-        "type": "github"
-      },
-      "original": {
-        "owner": "afermg",
-        "repo": "pynng",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
+        "nahual-flake": "nahual-flake",
         "nixpkgs": "nixpkgs",
-        "pynng-flake": "pynng-flake",
         "systems": "systems_2"
       }
     },
